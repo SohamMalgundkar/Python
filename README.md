@@ -1,0 +1,1 @@
+Python OOP Employee Management System. Demonstrates classes, inheritance, and relationship management. Includes Employee, Developer (with programming language), and Manager (with employee list) classes. Features salary increments and employee assignment methods. #Python #OOP #EmployeeManagemen

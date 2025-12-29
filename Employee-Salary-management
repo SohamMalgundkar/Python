@@ -1,4 +1,4 @@
- class employee():
+ class employee(): #Class for accessing Details of employee
   empcount=0
   incmt=1.10
   def __init__ (self,first,last,salary):
@@ -6,7 +6,7 @@
     self.last=last
     self.salary=salary
     self.email=first.lower()+"."+last.lower()+"@questech.com"
-    employee.empcou
+    employee.empcount
   def fullname(self):
     return f"{self.first.title()} {self.last.title()}"
   def increment (self):
@@ -14,13 +14,13 @@
 
 
 
-class developer(employee):
+class developer(employee): #Class for accessing Details of Developer
   def __init__ (self,first,last,salary,prog_lang):
     super().__init__(first,last,salary)
     self.prog_lang=prog_lang
 
 
-class manager(employee):
+class manager(employee):#Class for accessing Details of Manager
   def __init__(self,first,last,salary,Employee=None):
     super().__init__(first,last,salary)
 

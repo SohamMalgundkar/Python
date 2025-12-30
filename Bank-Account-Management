@@ -1,4 +1,4 @@
-class user():
+class user():# class to get user details
   def __init__(self,name,age,gender):
     self.name=name
     self.age=age
@@ -9,7 +9,7 @@ class user():
     print(f"Age is {self.age} ")
     print(f"Gender is {self.gender}")
 
-class bank(user):
+class bank(user):#class to create bank acc
   __balance=0
   __usercount=0
   def __init__(self,name,age,gender):
@@ -20,12 +20,12 @@ class bank(user):
    def ud(self):
     return self.usercount
 
-  def deposite(self, amount):
+  def deposite(self, amount):# for processing deposite
    self.amount=amount
    self.__balance += self.amount
    print(f"account Balance is updated:-rs{self.__balance}")
  
- def withdraw(self,amount):
+ def withdraw(self,amount):#for processing withdrawl
    self.amount=amount
    if(self.amount>self.__balance):
     print(f"insufficient amount, balance available:-rs{self.__balance}")
